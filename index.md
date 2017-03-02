@@ -1,6 +1,6 @@
-## Welcome to GitHub Pages
+## UCS Director Integrations
 
-You can use the [editor on GitHub](https://github.com/sthellwi/UCS-Director/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+UCS Director by itself offers many ways to integrate different solutions. For example, there is always the option to create granular individual Workflows by integrating existing scripts. In addition, you could also use "Open Automation" or 
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
