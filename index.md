@@ -1,12 +1,11 @@
-## UCS Director Integrations
+## UCS Director Exchange 2012 Rollout
 
-UCS Director by itself offers many ways to integrate different solutions. For example, there is always the option to create granular individual Workflows by integrating existing scripts. In addition, you could also use "Open Automation" or 
+UCS Director by itself offers many ways to integrate different solutions. For example, there is always the option to create granular individual Workflows by integrating existing scripts. In addition, you could also use "Open Automation" or "Script Modules".
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Prerequisites
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Before we begin to create the workflow, we need to have a working Windows 2012 image and a running PowerShell Agent which is integrated into UCS Director.
 
 ```markdown
 Syntax highlighted code block
