@@ -7,7 +7,7 @@ UCS Director by itself offers many ways to integrate different solutions. For ex
 
 Before we begin to create the workflow, we need to have a working Windows 2012 image and a running PowerShell Agent which is integrated into UCS Director.
 
-![useful image](https://github.com/sthellwi/UCS-Director/blob/master/images/exchange03.png)
+![Catalog Item Exchange 2012](https://github.com/sthellwi/UCS-Director/blob/master/images/exchange03.png?raw=true)
 
 ```markdown
 Syntax highlighted code block
