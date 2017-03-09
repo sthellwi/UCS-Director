@@ -10,7 +10,7 @@ Before we begin to create the workflow, we need to have a working Windows 2012 i
 ### Starting with the workflow
 Notice: All the required information are in the attached workflow at the end of the post as well. If you want to skip, please feel free :-)
 
-![Catalog Item Exchange 2012](https://github.com/sthellwi/UCS-Director/blob/master/images/exchange01.png?raw=true)
+![dependencies Exchange 2012 2012](https://github.com/sthellwi/UCS-Director/blob/master/Exchange2012/images/exchange01.png?raw=true)
 
 Based on the screenshot we are starting with generic VM settings. Afterwards we are going into the PowerShell configuration and create the dependencies for the Exchange Server 2012.
 
@@ -21,6 +21,7 @@ Based on the screenshot we are starting with generic VM settings. Afterwards we 
 echo "Install-WindowsFeature Net-HTTP-Activation, Desktop-Experience, NET-Framework-45-Features, RPC-over-HTTP-prox y, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, Web-Mgmt-Console, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compress ion, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy -Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-S tat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS" >c:\\ex-depen. ps1
 c:\\ex-depen.ps1
 ```
+![AD Exchange 2012](https://github.com/sthellwi/UCS-Director/blob/master/Exchange2012/images/exchange02.png?raw=true)
 
 ```markdown
 # Join Active Directory
@@ -37,8 +38,15 @@ echo "C:\\Exchange\\Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTe
 echo "C:\\Exchange\\Setup.exe /mode:Install /role: Mailbox /OrganizationName:${OrganizationName} /IAcceptExchangeSe rverLicenseTerms" >>c:\\ex-install.ps1
 c:\\ex-install.ps1
 ```
+
+### Creating the Catalog Item
+Finally, you have to create the catalog item so that endusers are able to start the engine.
+
+![Catalog Item Exchange 2012](https://github.com/sthellwi/UCS-Director/blob/master/Exchange2012/images/exchange03.png?raw=true)
+
+
 ### Download the workflow
-<a href="https://github.com/sthellwi/UCS-Director/raw/master/files/Exchange2012.wfdx.zip" download>Download Exchange 2012 Workflow</a> 
+<a href="https://github.com/sthellwi/UCS-Director/raw/master/Exchange2012/files/Exchange2012.wfdx.zip" download>Download Exchange 2012 Workflow</a>
 
 ### Support or Contact
 Any questions about the workflow?
