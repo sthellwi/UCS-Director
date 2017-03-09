@@ -22,6 +22,23 @@ echo "Install-WindowsFeature Net-HTTP-Activation, Desktop-Experience, NET-Framew
 c:\\ex-depen.ps1
 ```
 
+```markdown
+# Join Active Directory
+echo "Set-DNSClientServerAddress -interfaceIndex 12 -ServerAddresses ('${DCIP}','4.4.4.4')">c:\\ad-join.ps1
+echo "Add-Computer -DomainName ${DomainName} -Credential (New-Object System.Management.Automation.PsCredential('${D omainNetbiosName}\\administrator', (ConvertTo-SecureString '${Password}' -AsPlainText -Force)))">>c:\\ad-join.ps1
+c:\\ad-join.ps1
+```
+
+```markdown
+# Install Echange 2012
+echo "C:\\Exchange\\Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms" >c:\\ex-install.ps1
+echo "C:\\Exchange\\Setup.exe /PrepareAd /IAcceptExchangeServerLicenseTerms /OrganizationName:${OrganizationName}" >>c:\\ex-install.ps1
+echo "C:\\Exchange\\Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms" >>c:\\ex-install.ps1
+echo "C:\\Exchange\\Setup.exe /mode:Install /role: Mailbox /OrganizationName:${OrganizationName} /IAcceptExchangeSe rverLicenseTerms" >>c:\\ex-install.ps1
+c:\\ex-install.ps1
+```
+### Download the workflow
+<a href="/files/Exchange2012.wfdx.zip" download>Download Exchange 2012 Workflow</a> 
 
 ### Support or Contact
 Any questions about the workflow?
