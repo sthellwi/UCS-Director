@@ -38,7 +38,7 @@ echo "C:\\Exchange\\Setup.exe /mode:Install /role: Mailbox /OrganizationName:${O
 c:\\ex-install.ps1
 ```
 ### Download the workflow
-<a href="/files/Exchange2012.wfdx.zip" download>Download Exchange 2012 Workflow</a> 
+<a href="https://github.com/sthellwi/UCS-Director/raw/master/files/Exchange2012.wfdx.zip" download>Download Exchange 2012 Workflow</a> 
 
 ### Support or Contact
 Any questions about the workflow?
